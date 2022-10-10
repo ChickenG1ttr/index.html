@@ -1,1 +1,49 @@
-Page not found, <a href="https://chickeng1ttr.github.io/site">Return to home</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 Error - Page Not Found</title>
+    <style>
+      body{
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  pTag = document.querySelector("div");
+  newVal = document.createElement("p");
+  newVal.innerHTML = '';
+  pTag.appendChild(newVal);
+});
+// Async Tests Example
+/*
+window.onModulesLoaded = new Promise( function( resolve, reject ) {
+  setTimeout(function() {
+    pTag = document.querySelector("div");
+    pTag.innerHTML = '';
+    newVal = document.createElement("p");
+    newVal.innerHTML = 'Hello World';
+    pTag.appendChild(newVal);
+    resolve();
+  }, 100)
+});
+*/
+    </script>
+        <div id="score">0</div>
+    <canvas id="snakeboard" width="400" height="400"></canvas>
+
+    <style>
+      #snakeboard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        font-size: 140px;
+      }
+    </style>
+  </body>
+</html>
